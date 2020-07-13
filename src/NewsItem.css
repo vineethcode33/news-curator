@@ -1,0 +1,30 @@
+table {
+  counter-reset: rowNumber;
+  background-color: #f6f6ef;
+}
+
+table tr::before {
+  display: table-cell;
+  counter-increment: rowNumber;
+  content: counter(rowNumber) ".";
+  padding-top: 1px;
+  width: 0.3em;
+}
+
+.table td {
+  padding: 0;
+}
+
+.upvote-symbol {
+}
+
+.top-row {
+  display: table;
+  width: 100%;
+  padding-top: 0;
+}
+
+.bottom-row {
+  display: table-cell;
+  font-size: 12px;
+}

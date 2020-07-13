@@ -13,6 +13,7 @@ import "./HeaderBar.css";
 
 const HeaderBar = (props) => {
   const [isOpen, setIsOpen] = useState(false);
+
   const toggle = () => setIsOpen(!isOpen);
 
   return (
